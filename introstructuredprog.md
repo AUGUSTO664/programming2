@@ -20,9 +20,11 @@ A [programming paradigm](https://digitalfellows.commons.gc.cuny.edu/2018/03/12/a
 If you’ve done programming in Python or C, you’ve used imperative programming. Imperative programming defines the solution to a problem as a series of steps—first do this, then do that, then do the next thing, and so on. The computer steps through each line of code, executing it and moving on to the next step. Programs written in the imperative style often resemble recipes—first crack the eggs, then mix in the flour, then add water. Imperative programs often change the state of the program on each line, assigning new variables and referring to or changing old ones. Though intuitive for solving small problems, imperative programs quickly become unmanageable as they become larger.
 
 * Declarative
+
 It is divided as Logic, Functional, Database. In computer science the declarative programming is a style of building programs that expresses logic of computation without talking about its control flow. It often considers programs as theories of some logic.It may simplify writing parallel programs. The focus is on what needs to be done rather how it should be done basically emphasize on what code code is actually doing. It just declare the result we want rather how it has be produced. This is the only difference between imperative (how to do) and declarative (what to do) programming paradigms. Getting into deeper we would see logic, functional and database.
 
 * Functional
+
  he functional programming paradigms has its roots in mathematics and it is language independent. The key principal of this paradigms is the execution of series of mathematical functions. The central model for the abstraction is the function which are meant for some specific computation and not the data structure. Data are loosely coupled to functions.The function hide their implementation. Function can be replaced with their values without changing the meaning of the program. Some of the languages like perl, javascript mostly uses this paradigm.
   
  Examples of Functional programming paradigm:
@@ -126,9 +128,11 @@ return sort(result);
 It is one of the oldest programming paradigm. It features close relation relation to machine architecture. It is based on Von Neumann architecture. It works by changing the program state through assignment statements. It performs step by step task by changing state. The main focus is on how to achieve the goal. The paradigm consist of several statements and after execution of all the result is stored.
 
 * Interpreted (Scripting)
+
 These programming languages are often procedural and may comprise object-oriented language elements, but they fall into their own category as they are normally not full-fledged programming languages with support for development of large systems. For example, they may not have compile-time type checking. Usually, these languages require tiny syntax to get started.
 
 * Object-oriented
+
 based on the concept of “objects”, which can contain data, in the form of fields (often known as attributes), and code, in the form of procedures (often known as methods). An object’s procedures that can access and often modify the data fields of the object with which they are associated.
 Object-oriented programming (OOP) refers to a type of computer programming (software design) in which programmers define the data type of a data structure, and also the types of operations (functions) that can be applied to the data structure.
 
@@ -138,6 +142,7 @@ The Basic OOP Concepts
 If you are new to object-oriented programming languages, you will need to know a few basics before you can get started with code. The following Webopedia definitions will help you better understand object-oriented programming:
 
 Abstraction: The process of picking out (abstracting) common features of objects and procedures.
+
 * Class: A category of objects. The class defines all the common properties of the different objects that belong to it.
 * Encapsulation: The process of combining elements to create a new entity. A procedure is a type of encapsulation because it combines a series of computer instructions.
 * Information hiding: The process of hiding details of an object or function. Information hiding is a powerful programming technique because it reduces complexity.
@@ -190,6 +195,29 @@ Ada and pascal
 Eah programming language has a unique set of keywords (words that it 
 understands) and a especial syntax for organizing program instructions.
 [webopedia](https://www.webopedia.com/TERM/P/programming_language.html)
+
+## Version Control
+
+Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book, you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer.
+
+If you are a graphic or web designer and want to keep every version of an image or layout (which you would most certainly want to), a Version Control System (VCS) is a very wise thing to use. It allows you to revert selected files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more. Using a VCS also generally means that if you screw things up or lose files, you can easily recover. In addition, you get all this for very little overhead.
+
+* Local Version Control Systems
+Many people’s version-control method of choice is to copy files into another directory (perhaps a time-stamped directory, if they’re clever). This approach is very common because it is so simple, but it is also incredibly error prone. It is easy to forget which directory you’re in and accidentally write to the wrong file or copy over files you don’t mean to.
+
+To deal with this issue, programmers long ago developed local VCSs that had a simple database that kept all the changes to files under revision control.
+![Image of Yaktocat](https://git-scm.com/book/en/v2/images/local.png)
+
+One of the most popular VCS tools was a system called RCS, which is still distributed with many computers today. RCS works by keeping patch sets (that is, the differences between files) in a special format on disk; it can then re-create what any file looked like at any point in time by adding up all the patches.
+
+* Centralized Version Control Systems
+
+The next major issue that people encounter is that they need to collaborate with developers on other systems. To deal with this problem, Centralized Version Control Systems (CVCSs) were developed. These systems (such as CVS, Subversion, and Perforce) have a single server that contains all the versioned files, and a number of clients that check out files from that central place. For many years, this has been the standard for version control.
+
+
+* Distributed Version Control Systems
+
+This is where Distributed Version Control Systems (DVCSs) step in. In a DVCS (such as Git, Mercurial, Bazaar or Darcs), clients don’t just check out the latest snapshot of the files; rather, they fully mirror the repository, including its full history. Thus, if any server dies, and these systems were collaborating via that server, any of the client repositories can be copied back up to the server to restore it. Every clone is really a full backup of all the data.
 
 
 
