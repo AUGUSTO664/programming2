@@ -220,10 +220,11 @@ The next major issue that people encounter is that they need to collaborate with
 This is where Distributed Version Control Systems (DVCSs) step in. In a DVCS (such as Git, Mercurial, Bazaar or Darcs), clients don’t just check out the latest snapshot of the files; rather, they fully mirror the repository, including its full history. Thus, if any server dies, and these systems were collaborating via that server, any of the client repositories can be copied back up to the server to restore it. Every clone is really a full backup of all the data.
 
 
-
-[digitalfellows](https://digitalfellows.commons.gc.cuny.edu/2018/03/12/an-introduction-to-programming-paradigms/)
-Introduction of Programming Paradigms[geeksforgeeks](https://www.geeksforgeeks.org/introduction-of-programming-paradigms/)
-[Template based](https://www.codeproject.com/Articles/2015/Template-based-programming).
-[Paradigms program](https://medium.com/@jingchenjc2019/a-brief-survey-of-programming-paradigms-207543a84e2b)
-[Compiled versusinterpreted languages](https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/)
+References 
+* [digitalfellows](https://digitalfellows.commons.gc.cuny.edu/2018/03/12/an-introduction-to-programming-paradigms/)
+* Introduction of Programming Paradigms[geeksforgeeks](https://www.geeksforgeeks.org/introduction-of-programming-paradigms/)
+* [Template based](https://www.codeproject.com/Articles/2015/Template-based-programming).
+* [Paradigms program](https://medium.com/@jingchenjc2019/a-brief-survey-of-programming-paradigms-207543a84e2b)
+* [Compiled versusinterpreted languages](https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/)
+* [Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
 
