@@ -11,6 +11,9 @@ programming paradigms and how solve problems using the as a source.
 
 # UNIT 1
  
+## Classification of programming paradigms
+###Characteristics of the Classification of  Programming Paradigms
+
 
 ## Prgramming Languages 
 
