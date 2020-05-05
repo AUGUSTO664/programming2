@@ -24,7 +24,7 @@ It is divided as Logic, Functional, Database. In computer science the declarativ
 
 * Functional
  he functional programming paradigms has its roots in mathematics and it is language independent. The key principal of this paradigms is the execution of series of mathematical functions. The central model for the abstraction is the function which are meant for some specific computation and not the data structure. Data are loosely coupled to functions.The function hide their implementation. Function can be replaced with their values without changing the meaning of the program. Some of the languages like perl, javascript mostly uses this paradigm.
-   ```
+  
  Examples of Functional programming paradigm:
 
 JavaScript : developed by Brendan Eich
@@ -34,11 +34,13 @@ Erlang : developed by Joe Armstrong, Robert Virding
 Lisp : developed by John Mccarthy
 ML : developed by Robin Milner
 Clojure : developed by Rich Hickey 
-  ```
+ 
 
  
 * Dataflow
+
 His programming methodology is based on data and its movement. Program statements are defined by data rather than hard-coding a series of steps. A database program is the heart of a business information system and provides file creation, data entry, update, query and reporting functions. There are several programming languages that are developed mostly for database application. For example SQL. It is applied to streams of structured data, for filtering, transforming, aggregating (such as computing statistics), or calling other programs. So it has its own wide application.
+
        ```
          CREATE DATABASE databaseAddress;
          CREATE TABLE Addr (
@@ -47,8 +49,7 @@ His programming methodology is based on data and its movement. Program statement
              FirstName varchar(200),
              Address varchar(200),
              City varchar(200),
-             State varchar(200)
-         );         ```
+             State varchar(200)     ```
 
 * Logic
 It can be termed as abstract model of computation. It would solve logical problems like puzzles, series etc. In logic programming we have a knowledge base which we know before and along with the question and knowledge base which is given to machine, it produces result. In normal programming languages, such concept of knowledge base is not available but while using the concept of artificial intelligence, machine learning we have some models like Perception model which is using the same mechanism.
@@ -70,6 +71,7 @@ sum of two number in prolog:
 
 
 * [Constraint-based](https://www.info.ucl.ac.be/~pvr/VanRoyChapter.pdf).
+
 presents the most declarative paradigm of our taxonomy, in the original sense of declarative: telling the computer what is needed instead of how to calculate it. This paradigm provides a high level of abstraction for solving problems with global conditions. This has been used in the past for combinatorial problems, but it can also be used for many more general applications such as computer-aided
 composition. Constraint programming has achieved a high degree of maturity since its origins in the 1970s. It uses sophisticated algorithms to find solutions that satisfy global conditions. This means that it genuinely delivers on its ambitious claims.
 
@@ -80,7 +82,7 @@ As we already know of inheritance, it is a good way of reusing your code. Howeve
 As we already know of inheritance, it is a good way of reusing your code. However, Visual C++ provides another way of reusing your code. We can do this through templates. With templates you can make the 'type' parameter. Let me explain. When you had this class that shows all processor information. The class is huge, and it uses all integers. What if, in time, the integer wouldn't be able to store the information of the processor (just because it's out of range for the integer). Now you'll need to review all your code and change the integers to longs. Or when you have this class that handles int arrays, and someday you'll need the exact same class, only you want it to handle floats.
 
 in template based programming we would make it look like this, no matter what the brand is.
- ``` C
+ ```C
 Hide   Copy Code
 //what if we want to create a template class 
 //which needs to take any valid car
@@ -97,11 +99,14 @@ public:
     {
         theCar.SpeedUp();
     }
-}
- ```
+} 
+```
+
+
 * Structured
 
 Structured programming is a kind of imperative programming where control flow is defined by nested loops, conditionals, and subroutines, rather than via gotos. Variables are generally local to blocks (have lexical scope).
+
  ``` C
 result = [];
 for i = 0; i < length(people); i++ {
