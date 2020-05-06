@@ -184,6 +184,9 @@ Compiled languages need a “build” step – they need to be manually compiled
 Examples of pure compiled languages are C, C++, Erlang, Haskell, Rust, and Go.
 
 
+![Image of Yaktoc](https://1571b175-a-62cb3a1a-s-sites.googlegroups.com/site/cs4217jan2011team2/programming-paradigms/Programming%20Paradigms.PNG?attachauth=ANoY7cr00QAE79H5ixHlh1KAE8HoQmnBXr1ZX39pmkvEgAYkH6SdHB8NgqzqqWRYT2H4iEQ5DZg521oBlstosOgRrK51dPIDYK5pz3kAq-uF2vHqqu4A8DDYCNz_d8LksoqNo8C1MWa_ZzxOwfbhw3fGU1IzyQ1GvpGsmqZXfglgM78yGXCCzLkvDq_V3k3bmTZRZaEUfjBoFlfJUIxJ7hEz9sfMlAXeV-bWZSa9f2FJRDaCBKc8z8o4MjdxpiZUcCF8NuFz_nUest2fYbNy-adeEf2MWO_6zQ%3D%3D&attredirects=0)
+
+
 
 ## DATA REPRESENTATION AND DATA OPERATORS
 
