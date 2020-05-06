@@ -185,16 +185,81 @@ Examples of pure compiled languages are C, C++, Erlang, Haskell, Rust, and Go.
 
 
 
-## Prgramming Languages 
-
+## DATA REPRESENTATION AND DATA OPERATORS
 A _Prgramming Language_ is a vocabulary and set of grammatical rules for 
 instructing a computer or computer device to perfom specific tasks. the term
 ussually refers to hihg-level languages such as BASIC, C, C++, COBOL, FORTRAN,
 Ada and pascal 
 
-Eah programming language has a unique set of keywords (words that it 
+##indetifiers 
+are name for entitites for example in C such as variables, arrays, functions, structures, 
+unions and labels An identifier can be composed only of uppercase, lowercase letters, underscore and digits, but should start only with an alphabet or an underscore. If the identifier is not used in an external link process, then it is called as internal. Example: Local variable. If the identifier is used in an external link process, then it is called as external. Example: Global variable
+
+An identifier is a string of alphanumeric characters that begins with an alphabetic character or an underscore character that are used to represent various programming elements such as variables, functions, arrays, structures, unions and so on. Actually, an identifier is a user-defined word. There are 53 characters, to represent identifiers. They are 52 alphabetic characters (i.e., both uppercase and lowercase alphabets) and the underscore character. The underscore character is considered as a letter in identifiers. The underscore character is usually used in the middle of an identifier. There are 63 alphanumeric characters, i.e., 53 alphabetic characters and 10 digits (i.e., 0-9).
+
+Rules for constructing identifiers
+
+1.     The first character in an identifier must be an alphabet or an underscore and can be followed only by any number alphabets, or digits or underscores.
+2.     They must not begin with a digit.
+3.     Uppercase and lowercase letters are distinct. That is, identifiers are case sensitive.
+4.     Commas or blank spaces are not allowed within an identifier.
+5.     Keywords cannot be used as an identifier.
+6.     Identifiers should not be of length more than 31 characters.
+7.     Identifiers must be meaningful, short, quickly and easily typed and easily read.
+
+kinds of identifiers
+       
+C defines two kinds of identifiers:
+
+    Internal
+    External
+Internal identifier   If the identifier is used in an external link process, then it is called as external. These identifiers are also known as external names; include function names and global variable names that are shared between source files. It has at least 63 significant characters.
+
+External identifier  If the identifier is not used in an external link process, then it is called as internal. These identifiers are also known as internal names; includes the names of local variables. It has at least 31 significant characters.
+
+##VARIABLES
+The most simple form of storage is called a variable. It's an area of memory that stores one item of data, such as a number or a character. They have two purposes - the programmer is able to choose the names of the variables, making programming easier, and also, you can write programs or functions that will work with any values. If you're familiar with spreadsheets already, you can think of variables as being like the cells, which you can then use in formulae regardless of the values they contain. All procedural programming languages, such as C, BASIC and Pascal, have variables, although they may support different types and let you manipulate them in different ways.
+
+Some languages are strongly typed (see below), whereas others aren't typed at all. Some require that you declare a variable before you use it, and others let you go straight in and define a variable's value without declaring it first.
+
+Declaring a variable gives the variable a name, and, in most programming languages, gives it a type - in effect it creates the container that stores your value. See the Type section for examples of declarations.
+
+When you define a variable, you are simply giving it a value.
+
+##CONSTANTS
+most programming languages also support the use of constants - these are used in the same way as variables, but their values can't be changed once the program is running. They are useful because you can refer to mathematic values by name, rather than having to remember them, or you can personalise many parts of your programming by setting a constant to the name of the user at the start of the program. Programming languages may also include many constants of their own, which are predefined. In Visual BASIC, for example, these include values such as pi, true and false, and also the arguments used for certain functions, such as msgbox() types (e.g. vbYesNo), which are actually just integers.
+
+With compiled languages, the compiler often works by replacing the names of the constants with their actual value (like Find and Replace in a text editor or word processor) before compiling the code, thereby reducing the amount of memory required for storage and making the code more efficient.
+
+## Reserved Word 
+ reserved words are terms or phrases appropriated for special use that may not be utilized in the creation of variable names. For example, "print" is a reserved word because it is a function in many languages to show text on the screen.
+ 
+ ## Type of data 
+
+Primitive Data Structures are the basic data structures that directly operate upon the machine instructions.
+hey have different representations on different computers.
+Integers, Floating point numbers, Character constants, String constants and Pointers come under this category.
+Non-primitive Data Structures
+
+Non-primitive data structures are more complicated data structures and are derived from primitive data structures.
+They emphasize on grouping same or different data items with relationship between each data item.
+Arrays, Lists and Files come under this category.
+
+## RANGE OF VALUES OF EACH DATA TYPE
+
+TYPE | STORAGE SIZE | VALUE RANGE
+_ _ _| _ _  _ _ _ _ | _ _ _ _ _ _ 
+char | 1 byte       | -128 to 127 or 0 to 255
+unsigned char| 1 byte| 0 to 255 
+signed char| 1 byte | -128 to 127
+int| 2 or 4 bytes | -32,768 to 32,767 or -2,147,483,648
+
+
+
+A programming language has a unique set of keywords (words that it 
 understands) and a especial syntax for organizing program instructions.
 [webopedia](https://www.webopedia.com/TERM/P/programming_language.html)
+
 
 ## Version Control
 
