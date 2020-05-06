@@ -296,4 +296,6 @@ References
 * [Paradigms program](https://medium.com/@jingchenjc2019/a-brief-survey-of-programming-paradigms-207543a84e2b)
 * [Compiled versusinterpreted languages](https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/)
 * [Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
-
+* [identifiers](http://aboutc.weebly.com/identifiers.html)
+* [variables and data structure](https://www.advanced-ict.info/programming/variables.html)
+* [data types](https://www.tutorialspoint.com/cprogramming/c_data_types.htm)
