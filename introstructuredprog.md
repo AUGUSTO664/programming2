@@ -195,7 +195,7 @@ instructing a computer or computer device to perfom specific tasks. the term
 ussually refers to hihg-level languages such as BASIC, C, C++, COBOL, FORTRAN,
 Ada and pascal 
 
-## IDENTIFIERS
+### IDENTIFIERS
 
 are name for entitites for example in C such as variables, arrays, functions, structures, 
 unions and labels An identifier can be composed only of uppercase, lowercase letters, underscore and digits, but should start only with an alphabet or an underscore. If the identifier is not used in an external link process, then it is called as internal. Example: Local variable. If the identifier is used in an external link process, then it is called as external. Example: Global variable
@@ -222,7 +222,7 @@ Internal identifier   If the identifier is used in an external link process, the
 
 External identifier  If the identifier is not used in an external link process, then it is called as internal. These identifiers are also known as internal names; includes the names of local variables. It has at least 31 significant characters.
 
-## VARIABLES
+### VARIABLES
 
 The most simple form of storage is called a variable. It's an area of memory that stores one item of data, such as a number or a character. They have two purposes - the programmer is able to choose the names of the variables, making programming easier, and also, you can write programs or functions that will work with any values. If you're familiar with spreadsheets already, you can think of variables as being like the cells, which you can then use in formulae regardless of the values they contain. All procedural programming languages, such as C, BASIC and Pascal, have variables, although they may support different types and let you manipulate them in different ways.
 
@@ -232,18 +232,18 @@ Declaring a variable gives the variable a name, and, in most programming languag
 
 When you define a variable, you are simply giving it a value.
 
-## CONSTANTS
+### CONSTANTS
 
 most programming languages also support the use of constants - these are used in the same way as variables, but their values can't be changed once the program is running. They are useful because you can refer to mathematic values by name, rather than having to remember them, or you can personalise many parts of your programming by setting a constant to the name of the user at the start of the program. Programming languages may also include many constants of their own, which are predefined. In Visual BASIC, for example, these include values such as pi, true and false, and also the arguments used for certain functions, such as msgbox() types (e.g. vbYesNo), which are actually just integers.
 
 With compiled languages, the compiler often works by replacing the names of the constants with their actual value (like Find and Replace in a text editor or word processor) before compiling the code, thereby reducing the amount of memory required for storage and making the code more efficient.
 
-## Reserved Word 
+### Reserved Word 
  reserved words are terms or phrases appropriated for special use that may not be utilized in the creation of variable names. For example, "print" is a reserved word because it is a function in many languages to show text on the screen.
  
- ## TYPE OF DATA  
+### TYPE OF DATA
 
-Primitive Data Structures are the basic data structures that directly operate upon the machine instructions.
+  Primitive Data Structures are the basic data structures that directly operate upon the machine instructions.
 hey have different representations on different computers.
 Integers, Floating point numbers, Character constants, String constants and Pointers come under this category.
 Non-primitive Data Structures
@@ -252,23 +252,144 @@ Non-primitive data structures are more complicated data structures and are deriv
 They emphasize on grouping same or different data items with relationship between each data item.
 Arrays, Lists and Files come under this category.
 
-## RANGE OF VALUES OF EACH DATA TYPE
+### MEMORY SPACE FOR EACH DATA TYPE AND RANGE OF VALUES
 
-|TYPE | STORAGE SIZE | VALUE RANGE|
-|_ _ _| _ _  _ _ _ _ | _ _ _ _ _ _| 
-|char | 1 byte       | -128 to 127 or 0 to 255|
-|unsigned char| 1 byte| 0 to 255| 
-|signed char| 1 byte | -128 to 127|
-|int| 2 or 4 bytes | -32,768 to 32,767 or -2,147,483,648|
+### DATA TYPE CONVERSION 
+
+Changing a data type of a value is refered to as "type conversion".
+There are two ways to do this:
+
+1. Impliclit - the change is implied
+2. Explicit  - the change is explicity done with an operator or function.
+
+The value being changed may be:
+1. Promotion - going from a smaller domain to a larger domain 
+2. Demotion  - going from a larger domain to a smaller domain
+
+Implicit type conversion 
+
+Automatic conversion of a value from one data type to another by a programming
+language, without the programmer specifically doing so, is called implicit
+type conversion. It happens whenever a binary operator has two operands of 
+different data types. Depending on the operator, one of the operands is going 
+to be converted to the data type of the other. It could be promoted or demoted
+depending on the operator.
+
+  Implicit Promotion     55 + 1.75
+In this example, the integer value 55 is converted to a floating-point value
+(most likely double) of 55.0 it was promoted 
+
+  Implicit Demotion  
+In programming languages that have explicit integer data types (C++, C#, Java)
+care must be taken to avoid implicit demotion. For example:
+
+int money;
+money = 23.15;
+In this example, the variable money is an integer. We are trying to move a 
+floating-point value usually gets truncated to 23.
+
+## Identify The operators of structured programming language.
+operators are the foundation of any programming language. thus the 
+functionally of C/C++ programming language is incomplete without the use of
+operators. We can define operators as symbols that help us to perform specific
+mathematical and logic computations on operands. In other words, we can say 
+that an operand operates the operands.
+
+### Conditional operators or Ternary operators in C
+Conditional operators return one value if condition is true and returns 
+another if the condition is false. This operator is also as ternary operator
+
+  syntax : (condition?true_value:false_value);
+  example : (A > 100 ? 0 : 1);
+In above example, If A is greater than 100, 0 is returned else 1 is returned.
+this is equal to if else conditional statements 
+
+  ``` C
+  #include <stdio.h>
+
+  int main()
+  {
+    int x = 1, y;
+    y = (x == 1 ? 2 : 0 );
+    printf("x value is %d\n", x);
+    printf("y value is %d\n", y);
+  }
+
+  ```
+   Output 
+  ******************
+  *  X value is 1  *
+  *  Y value is 2  *
+  ******************
+
+### Logical Operators
+A logical operator is a symbol or word used to connect two or more expressions such 
+that the value of the compound expression produced depends only on that of the 
+original expressions and on the meaning of the operator. 
+Common logical operators include AND, OR and NOT.
+
+Within most languages, expressions that yield Boolean data type values are divided 
+into two groups. One group uses the relational operator within their expressions and
+the other group uses logical operators within their expressions. 
+
+The logical operators are often used to help create a test expression that controls 
+program flow. This type of expression is also known as a Boolean expression because
+they create a Boolean answer or value when evaluated.
+
+ |Language | AND  | OR  | NOT |
+ |.........|......|.....|.....|
+ |C++      | &&   | ||  |  !  |
+ |C#       | &&   | ||  |  !  |
+ |Java     | &&   | ||  |  !  |
+ |Python   | and  | or  | not |
+
+ For Example 
+In most languages there are strict rules for forming proper logical expressions.
+ 6 > 4 && 2 <= 14
+ 6 > 4 and 2 <=14
+This expression has two relational operators and one logical operator. Using the 
+precedence of operator rules the two "relational comparison" operators will be donde
+before the "logical and" operator 
+  true && true
+  true and true
+
+The final evaluation of the expression is: true.
+We can say this in English as: It is true that six is greater than four and two is 
+less than  or equal to fourteen.
+
+### Relational Operators 
+
+A relational operator is a programming language construct or operator that tests or 
+defines some kind of relation between two entities. These include numerical equality 
+and inequalities.
+
+The relational operators are often used to create a test expression that controls 
+program flow. This type of expression is also known as Boolean expression because
+they create a Boolean answer or value when evaluated. There are six common relational
+operators that give a Boolean value by comparing (showing the relationship) between
+two operands. If the operands are different data types, implicit promotion occurs 
+to convert the operands to the same data type.
+
+Operator symbols and/or names can vary with different programming languages. Most 
+programming languages use relational operators similar to the following: 
+
+  |Operator  | Meaning             |
+  |:********:|:*******************:|
+  |  <       | less   than         |
+  |  >       |greater than         |
+  |  <=      |less than or equal to|
+  |  >=      |greater than or equal|
+  | ==       |  equal to           |
+  |!= or <>  | not equal to        |
 
 
 
-A programming language has a unique set of keywords (words that it 
+ programming language has a unique set of keywords (words that it 
 understands) and a especial syntax for organizing program instructions.
 [webopedia](https://www.webopedia.com/TERM/P/programming_language.html)
 
 
-## Version Control
+### Version Control
 
 Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book, you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer.
 
@@ -302,3 +423,7 @@ References
 * [identifiers](http://aboutc.weebly.com/identifiers.html)
 * [variables and data structure](https://www.advanced-ict.info/programming/variables.html)
 * [data types](https://www.tutorialspoint.com/cprogramming/c_data_types.htm)
+* [data type conversion](https://press.rebus.community/programmingfundamentals/chapter/data-type-conversions/)
+* [Conditional operators](https://fresh2refresh.com/c-programming/c-operators-expressions/c-conditional-operators/)
+* [logical operator](https://press.rebus.community/programmingfundamentals/chapter/logical-operators/)
+* [relational operatos](https://press.rebus.community/programmingfundamentals/chapter/relational-operators/)
