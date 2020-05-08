@@ -1,4 +1,3 @@
-![upy_logo](/Documentos/upy/progamming2/images/upy_logo)
 # Programming 2
 
 TEAM: 
@@ -255,6 +254,19 @@ Arrays, Lists and Files come under this category.
 
 ### MEMORY SPACE FOR EACH DATA TYPE AND RANGE OF VALUES
 
+   Type         Storage size        value range 
+   
+     char         1 byte        -128 to 127 or 0 to 255
+ unsigned char    1 byte              0 to 255
+  signed char     1 byte             -128 to 127
+     int        2 or 4 bytes  -32,768 to 32,767 or -2,147,483,648
+ unsigned int   2 or 4 bytes   0 to 65,535 or 0 to 4,294,967,295
+    short         2 bytes      -32,768 to 32,767
+ unsigned short   2 bytes             0 to 65,535
+     long         8 bytes    -9223372036854775808 to 9223372036854775807
+ unsigned long    8 bytes      0 to 18446744073709551615
+
+ 
 ### DATA TYPE CONVERSION 
 
 Changing a data type of a value is refered to as "type conversion".
@@ -337,12 +349,12 @@ The logical operators are often used to help create a test expression that contr
 program flow. This type of expression is also known as a Boolean expression because
 they create a Boolean answer or value when evaluated.
 
- |Language | AND  | OR  | NOT |
- |.........|......|.....|.....|
- |C++      | &&   | ||  |  !  |
- |C#       | &&   | ||  |  !  |
- |Java     | &&   | ||  |  !  |
- |Python   | and  | or  | not |
+ Language  AND   OR   NOT 
+ 
+ C++       &&    ||    !  
+ C#        &&    ||    !  
+ Java      &&    ||    !  
+ Python    and   or   not 
 
  For Example 
 In most languages there are strict rules for forming proper logical expressions.
@@ -374,20 +386,27 @@ to convert the operands to the same data type.
 Operator symbols and/or names can vary with different programming languages. Most 
 programming languages use relational operators similar to the following: 
 
-  |Operator  | Meaning             |
-  |:********:|:*******************:|
-  |  <       | less   than         |
-  |  >       |greater than         |
-  |  <=      |less than or equal to|
-  |  >=      |greater than or equal|
-  | ==       |  equal to           |
-  |!= or <>  | not equal to        |
+  Operator       Meaning
+             
+    <          less   than         
+    >          greater than         
+    <=         less than or equal to
+    >=         greater than or equal
+    ==         equal to           
+  != or <>     not equal to        
 
+### Basic functions of input-output.
 
+In many programming languages. to get data from the user we use the "scanf" function 
+and then storage it, to use it the syntax is 
 
- programming language has a unique set of keywords (words that it 
-understands) and a especial syntax for organizing program instructions.
-[webopedia](https://www.webopedia.com/TERM/P/programming_language.html)
+  scanf("%data_type", &indentifier);
+this command is use it in C language.
+
+To give an answer of an algorithm input data, we use the "printf" funtion  
+the sytax is:
+  
+   printf("text_goes_ here %data_type", variable identifier);
 
 
 ### Version Control
