@@ -193,7 +193,8 @@ Examples of pure compiled languages are C, C++, Erlang, Haskell, Rust, and Go.
 A _Programming Language_ is a vocabulary and set of grammatical rules for 
 instructing a computer or computer device to perfom specific tasks. the term
 ussually refers to hihg-level languages such as BASIC, C, C++, COBOL, FORTRAN,
-Ada and pascal 
+Ada and pascal. 
+Each program has different syntax. 
 
 ### IDENTIFIERS
 
